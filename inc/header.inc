@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="device-width, initial scale=1">
+</head>
+<body>
+    <?php 
+        include 'inc/nav.inc';
+    ?>
