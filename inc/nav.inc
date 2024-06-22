@@ -1,5 +1,5 @@
 <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light h1" style="background-image:url('images/ARTTLogo.jpg')">
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
@@ -17,8 +17,4 @@
             </ul>
         </div>
     </nav>
-    <div class="jumbotron text-center">
-        <h1>ARTT</h1>
-        <p>Professional Lawns and Garden Maintenance</p>
-    </div>
 </header>
