@@ -6,8 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "db:setup": "node --env-file-if-exists=.env.local scripts/setup-database.mjs",
+    "db:seed": "node --env-file-if-exists=.env.local scripts/seed-quotes.mjs"
   },
+  "engines": { "node": ">=24.14.0" },
   "dependencies": {
     "next": "16.4.6",
     "react": "19.3.0",
