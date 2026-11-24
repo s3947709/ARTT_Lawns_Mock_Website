@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
-import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
+import SiteTemplate from "@/templates/SiteTemplate";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -10,11 +9,6 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
-  return <html lang="en"><body>
-    <a className="skip-link" href="#main-content">Skip to content</a>
-    <Navigation />
-    <main id="main-content" className="container">{children}</main>
-    <Footer />
-  </body></html>;
+  return <SiteTemplate>{children}</SiteTemplate>;
 }
 
