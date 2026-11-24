@@ -50,3 +50,157 @@ a:focus-visible, button:focus-visible, input:focus-visible { outline: 3px solid 
 }
 @media (prefers-reduced-motion: reduce) { .job-slide { transition: none; } }
 
+/* Garden business homepage */
+.admin-dashboard { max-width: 1000px; margin: auto; padding: 3rem 0; }
+.admin-heading, .admin-enquiry header { display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; }
+.admin-heading h1 { font-family: Georgia, serif; font-size: clamp(2rem, 4vw, 3rem); font-weight: 400; margin: 0 0 1rem; }
+.admin-heading p { color: #62705f; }
+.admin-login { max-width: 460px; margin: 2rem auto; padding: 2rem; background: white; border: 1px solid #dce2d3; border-radius: 10px; display: grid; gap: 1rem; }
+.admin-login h2, .admin-login p { margin: 0; }
+.admin-summary { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: .75rem; margin: 2rem 0; }
+.admin-summary button { background: white; color: #254a30; border: 1px solid #dce2d3; padding: 1rem .5rem; border-radius: 8px; font-size: .75rem; }
+.admin-summary button strong { display: block; font-size: 1.8rem; margin-bottom: .25rem; }
+.admin-summary button[aria-pressed="true"] { background: #254a30; color: white; }
+.admin-tools { display: flex; align-items: end; gap: 1rem; margin: 1rem 0; }
+.admin-tools label { flex: 1; font-size: .85rem; }
+.admin-tools input { display: block; width: 100%; margin-top: .5rem; padding: .75rem; border: 1px solid #becab8; border-radius: 6px; }
+.admin-tools button { min-height: 44px; padding: .6rem 1rem; border: 1px solid #becab8; border-radius: 6px; background: white; color: #254a30; }
+.admin-enquiry { padding: 1.5rem; margin: 1rem 0; background: white; border: 1px solid #dce2d3; border-radius: 10px; }
+.admin-enquiry h2 { margin: 0; font-size: 1.3rem; }
+.admin-enquiry header p { color: #62705f; font-size: .8rem; }
+.admin-badge { padding: .3rem .7rem; border-radius: 5px; background: #edf3e4; color: #254a30; font-size: .75rem; }
+.admin-enquiry dl { display: grid; grid-template-columns: 90px minmax(0, 1fr); gap: .5rem; font-size: .9rem; }
+.admin-enquiry dt { font-weight: 600; }
+.admin-enquiry dd { margin: 0; overflow-wrap: anywhere; }
+.admin-job-message { white-space: pre-wrap; overflow-wrap: anywhere; padding: 1rem; background: #f8f8f2; border-radius: 6px; }
+.admin-enquiry .quote-form { display: grid; gap: 1rem; }
+.admin-enquiry .garden-button { justify-self: start; }
+.admin-empty { padding: 2rem; background: white; border: 1px dashed #becab8; border-radius: 8px; }
+@media (max-width: 767px) {
+  .admin-summary { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .admin-heading { flex-direction: column; }
+  .admin-login { padding: 1.25rem; }
+}
+.about-details { padding: 3rem 0; border-top: 1px solid #dce2d3; scroll-margin-top: 2rem; }
+.about-summary { max-width: 650px; color: #62705f; line-height: 1.8; }
+.about-details > h2 { font-family: Georgia, serif; font-weight: 400; font-size: clamp(2rem, 4vw, 3rem); margin: 0 0 1rem; }
+.about-draft-note { color: #62705f; max-width: 620px; line-height: 1.8; }
+.about-detail-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; margin-top: 2rem; }
+.about-detail-grid article { padding: 1.5rem; border: 1px dashed #aabb9d; border-radius: 8px; background: #f2f5ec; }
+.about-placeholder-label { display: inline-block; font-size: .65rem; text-transform: uppercase; letter-spacing: .1em; font-weight: 700; color: #526b42; }
+.about-detail-grid h3 { font-size: 1.25rem; font-weight: 500; margin: 1rem 0 .75rem; }
+.about-detail-grid p { color: #62705f; line-height: 1.8; font-size: .9rem; margin-bottom: 0; }
+@media (max-width: 767px) { .about-detail-grid { grid-template-columns: 1fr; } }
+.quote-section { display: grid; grid-template-columns: .8fr 1.2fr; gap: 3rem; padding: 3rem; margin: 1rem 0 3rem; border: 1px solid #dce2d3; border-radius: 10px; background: #fff; scroll-margin-top: 2rem; }
+.quote-heading h2 { font-family: Georgia, serif; font-size: clamp(2rem, 4vw, 3rem); font-weight: 400; margin: 0 0 1rem; }
+.quote-heading p { color: #62705f; line-height: 1.8; }
+.quote-heading .quote-note { font-size: .8rem; }
+.quote-form fieldset { padding: 0; margin: 0; border: 0; min-width: 0; }
+.quote-fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.quote-form label { display: flex; flex-direction: column; gap: .4rem; font-size: .85rem; font-weight: 600; color: #253c2d; }
+.quote-form input:not([type="checkbox"]), .quote-form select, .quote-form textarea { width: 100%; min-width: 0; padding: .8rem; border: 1px solid #becab8; border-radius: 5px; background: #fafbf7; color: #253c2d; font: inherit; }
+.quote-form textarea { resize: vertical; }
+.quote-form select:focus-visible, .quote-form textarea:focus-visible { outline: 3px solid #78b68a; outline-offset: 3px; }
+.quote-wide { grid-column: 1 / -1; }
+.quote-form .quote-consent { flex-direction: row; align-items: flex-start; gap: .65rem; font-weight: 400; margin: 1.25rem 0; line-height: 1.6; }
+.quote-consent input { margin-top: .25rem; accent-color: #254a30; }
+.quote-form .quote-trap { display: none; }
+.quote-form button:disabled, .quote-form fieldset:disabled button { opacity: .65; cursor: wait; }
+.quote-error, .quote-success { padding: 1rem; border-radius: 5px; margin: 1rem 0 0; }
+.quote-error { background: #fff0ed; color: #8b2f1b; }
+.quote-success { background: #eaf4e3; color: #254a30; }
+.quote-admin { padding: 2rem 0; max-width: 850px; margin: auto; }
+.quote-admin .quote-form { display: grid; gap: 1rem; max-width: 500px; margin-bottom: 2rem; }
+.quote-record { margin-top: 1rem; padding: 1.5rem; border: 1px solid #dce2d3; background: white; border-radius: 8px; }
+.quote-record h2 { margin-top: 0; }
+.quote-record dt { font-weight: bold; }
+.quote-record dd { margin: 0 0 .5rem; overflow-wrap: anywhere; }
+@media (max-width: 767px) {
+  .quote-section { grid-template-columns: 1fr; padding: 1.5rem; gap: 1rem; }
+  .quote-fields { grid-template-columns: 1fr; }
+}
+body { background: #f8f8f2; color: #253c2d; }
+.site-header { background: #fff; border-bottom: 1px solid #dde3d7; }
+.navigation { max-width: 1240px; margin: auto; padding: 1.1rem 2rem; gap: 2.5rem; }
+.site-brand { display: flex; flex-direction: column; align-items: flex-start; gap: .45rem; flex-shrink: 0; text-decoration: none; padding: .25rem 0; }
+.nav-logo { width: 190px; height: auto; border-radius: 4px; }
+.site-brand-description { color: #3d553e; font-size: .65rem; font-weight: 600; letter-spacing: .025em; white-space: nowrap; }
+.navigation-links { justify-content: flex-end; gap: 2rem; }
+.navigation li a { font-size: .95rem; font-weight: 600; color: #506251; padding: .65rem .5rem; display: block; }
+.navigation li a:hover, .navigation li a[aria-current] { color: #254a30; }
+.search-form input { background: #f8f8f2; width: 160px; }
+.search-form button { background: #315638; color: #fff; border-color: #315638; }
+.menu-toggle { color: #254a30; border-color: #b5c2ae; }
+.container { width: min(1240px, 100%); margin-top: 0; padding: 0 2rem; }
+.garden-home { --garden-green: #254a30; --garden-muted: #62705f; }
+.garden-home h1, .garden-home h2, .garden-home h3 { line-height: 1.08; letter-spacing: -.045em; }
+.garden-eyebrow { font-size: .7rem; letter-spacing: .16em; text-transform: uppercase; font-weight: 700; color: #526b42; margin: 0 0 1.3rem; }
+.garden-hero { display: grid; grid-template-columns: 1fr 1.05fr; gap: 3rem; align-items: center; padding: 3rem 0 4rem; }
+.garden-hero-copy { padding: 1.5rem 0; }
+.garden-hero h1 { font-family: Georgia, 'Times New Roman', serif; font-weight: 400; font-size: clamp(3rem, 5.8vw, 5rem); margin: 0 0 1.5rem; }
+.garden-hero h1 em { color: #608044; }
+.garden-intro { max-width: 390px; line-height: 1.8; color: var(--garden-muted); font-size: 1rem; margin-bottom: 2rem; }
+.garden-actions { display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap; }
+.garden-button { display: inline-flex; align-items: center; justify-content: space-between; gap: 2rem; background: var(--garden-green); color: white; text-decoration: none; font-size: .85rem; font-weight: 600; border: 1px solid transparent; border-radius: 5px; padding: .95rem 1.25rem; min-height: 48px; }
+.garden-button:hover { background: #193821; }
+.garden-text-link { font-size: .85rem; color: var(--garden-green); text-underline-offset: 5px; }
+.garden-text-link span { margin-left: .5rem; }
+.garden-hero-note { display: flex; align-items: center; gap: .65rem; border-top: 1px solid #dce2d3; margin-top: 2.5rem; padding-top: 1.25rem; font-size: .75rem; color: var(--garden-muted); }
+.garden-hero-note span { font-size: 1.5rem; color: #68834a; }
+.garden-hero-photo { position: relative; margin: 0; height: 550px; border-radius: 160px 8px 8px 8px; overflow: hidden; background: #d4dfc6; }
+.garden-hero-photo img { object-fit: cover; object-position: 45% center; }
+.garden-hero-photo::after { content: ""; position: absolute; inset: 45% 0 0; background: linear-gradient(transparent, #11271bc9); pointer-events: none; }
+.garden-hero-photo figcaption { position: absolute; bottom: 1.75rem; left: 2rem; right: 1rem; z-index: 1; color: white; }
+.garden-hero-photo figcaption span { display: block; text-transform: uppercase; letter-spacing: .12em; font-size: .65rem; margin-bottom: .5rem; }
+.garden-hero-photo figcaption strong { font-family: Georgia, serif; font-size: 1.4rem; font-weight: 400; }
+.garden-services, .garden-work { padding: 3.5rem 0; border-top: 1px solid #dce2d3; }
+.garden-section-heading { display: flex; justify-content: space-between; align-items: end; gap: 2rem; margin-bottom: 2.5rem; }
+.garden-section-heading h2, .garden-contact h2 { font-family: Georgia, serif; font-size: clamp(2.1rem, 3.7vw, 3.25rem); font-weight: 400; margin: 0; }
+.garden-section-heading > p { max-width: 340px; color: var(--garden-muted); font-size: .9rem; line-height: 1.8; margin: 0; }
+.garden-service-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2rem; }
+.garden-service-list article { border-top: 2px solid #a6b992; padding-top: 1.25rem; }
+.garden-service-number { font-size: .75rem; color: #627953; }
+.garden-service-list h3 { font-size: 1.25rem; font-weight: 500; margin: 1.25rem 0 .75rem; }
+.garden-service-list p { color: var(--garden-muted); line-height: 1.8; font-size: .9rem; max-width: 290px; }
+.garden-service-list a { font-size: .85rem; text-underline-offset: 4px; }
+.garden-work { scroll-margin-top: 2rem; }
+.garden-home .job-carousel { border: 1px solid #dce2d3; border-radius: 8px; background: white; padding: .5rem; min-width: 0; }
+.garden-home .job-images { border-radius: 5px; overflow: hidden; height: auto; aspect-ratio: 4 / 4.5; }
+.garden-home .job-caption { left: .75rem; transform: none; bottom: .75rem; background: #1e3c2be6; font-size: .75rem; border-radius: 4px; padding: .4rem .75rem; }
+.garden-home .carousel-controls { gap: .25rem; padding: .25rem 0; }
+.garden-home .carousel-controls button { border-color: transparent; min-height: 44px; font-size: .75rem; }
+.garden-home .carousel-controls button[aria-pressed="true"] { background: #e9efdf; color: #254a30; }
+.garden-home .carousel-controls button:last-child { margin-left: auto; }
+.garden-contact { background: #254a30; color: #fff; padding: 3rem; border-radius: 8px; display: flex; align-items: center; justify-content: space-between; gap: 2rem; margin: 1rem 0 4rem; }
+.garden-contact .garden-eyebrow { color: #cedbb7; }
+.garden-contact p:last-child { color: #d2ddcc; max-width: 360px; font-size: .9rem; line-height: 1.8; margin-bottom: 0; }
+.garden-contact h2 { margin-bottom: 1rem; }
+.garden-button-light { background: #e7edce; color: #254a30; flex-shrink: 0; }
+.garden-button-light:hover { background: white; }
+.site-footer { border-color: #dce2d3; color: #62705f; font-size: .8rem; padding: 1.5rem; }
+@media (max-width: 1000px) {
+  .navigation { gap: 1.5rem; }
+  .navigation-links { gap: 1rem; }
+  .garden-hero { gap: 2rem; }
+  .garden-hero-photo { height: 480px; }
+}
+@media (max-width: 767px) {
+  .navigation { padding: 1rem 1.25rem; }
+  .nav-logo { width: 150px; }
+  .site-brand-description { font-size: .58rem; letter-spacing: 0; }
+  .navigation-links.is-open { padding-top: .5rem; }
+  .navigation li a { font-size: 1rem; }
+  .container { padding: 0 1.25rem; margin-top: 0; }
+  .garden-hero { grid-template-columns: 1fr; padding: 2rem 0 2.5rem; gap: 1rem; }
+  .garden-hero-copy { padding: .5rem 0; }
+  .garden-hero h1 { font-size: clamp(2.8rem, 11vw, 4rem); }
+  .garden-hero-photo { height: 380px; border-top-left-radius: 100px; }
+  .garden-hero-note { margin-top: 1.5rem; }
+  .garden-services, .garden-work { padding: 2.5rem 0; }
+  .garden-section-heading { flex-direction: column; align-items: start; gap: 1rem; margin-bottom: 2rem; }
+  .garden-service-list { grid-template-columns: 1fr; gap: 1.5rem; }
+  .garden-service-list h3 { margin-top: .75rem; }
+  .garden-home .job-images { aspect-ratio: 4 / 3; }
+  .garden-contact { flex-direction: column; align-items: start; padding: 2rem 1.5rem; margin-bottom: 2.5rem; }
+}
+

@@ -3,8 +3,7 @@ import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 
 const pages = [
-  { href: "/", title: "Home", description: "Lawns and Garden Maintenance. Before and after job gallery." },
-  { href: "/about", title: "About", description: "ARTT Lawns and Garden Maintenance business information." },
+  { href: "/", title: "Home", description: "About ARTT Lawns and Garden Maintenance, our story, team and business information. Before and after job gallery. Get a quote." },
   { href: "/contact", title: "Contact", description: "Contact details will be added here." },
   { href: "/services", title: "Services", description: "Lawns and garden maintenance. Service details will be added here." },
 ];
